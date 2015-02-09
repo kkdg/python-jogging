@@ -12,7 +12,10 @@ class Parent:
         def getAttr(self):
             print "Parent Attribute : ", Parent.parentAttr
 
-class Child(Parent):
+class Brother:
+        brotherAttr = 300
+
+class Child(Parent,Brother):
         def __init__(self):
             print "Calling child constructor"
 
@@ -25,3 +28,5 @@ c.parentMethod()
 c.getAttr()
 c.setAttr(200)
 c.getAttr()
+print c.parentAttr
+print c.brotherAttr
