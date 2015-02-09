@@ -21,3 +21,7 @@ class Child(Parent):
 
 c = Child()
 c.childMethod()
+c.parentMethod()
+c.getAttr()
+c.setAttr(200)
+c.getAttr()
